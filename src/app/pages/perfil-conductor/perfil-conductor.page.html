@@ -52,17 +52,17 @@
   <ion-tabs>
 
     <ion-tab-bar slot="bottom" color="dark" >
-      <ion-tab-button tab="inicio">
+      <ion-tab-button [routerLink]="['/inicio-conductor']" >
         <ion-icon name="home"></ion-icon>
         <ion-label >Inicio</ion-label>
       </ion-tab-button>
   
-      <ion-tab-button tab="mapa">
+      <ion-tab-button [routerLink]="['/mapa-conductor']" >
         <ion-icon name="map"></ion-icon>
         <ion-label>Mapa</ion-label>
       </ion-tab-button>
   
-      <ion-tab-button tab="cuenta-cliente">
+      <ion-tab-button [routerLink]="['/perfil-conductor']" >
         <ion-icon name="person-circle"></ion-icon>
         <ion-label>Cuenta</ion-label>
       </ion-tab-button>
