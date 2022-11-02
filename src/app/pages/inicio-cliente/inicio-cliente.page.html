@@ -1,9 +1,45 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>inicioCliente</ion-title>
-  </ion-toolbar>
+<ion-header >
+  <ion-toolbar color="success">
+  <ion-title>Inicio</ion-title>
+  
+</ion-toolbar>
 </ion-header>
-
 <ion-content>
 
-</ion-content>
+  <ion-card>
+    <img src="./assets/img/MIAUto.jpg">
+    <ion-card-header>
+      <ion-card-subtitle>MiAuto</ion-card-subtitle>
+      <ion-card-title>Para universidades e institutos</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Aplicación que permite a los alumnos organizarse a través de la App para que puedan retornar a sus hogares utilizando vehículos de algunos alumnos que si tienen movilización propia.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-router-outlet></ion-router-outlet>
+  <ion-tabs>
+
+    <ion-tab-bar slot="bottom" color="dark" >
+      <ion-tab-button tab="inicio">
+        <ion-icon name="home"></ion-icon>
+        <ion-label >Inicio</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="mapa">
+        <ion-icon name="map"></ion-icon>
+        <ion-label>Mapa</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="cuenta-cliente">
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-label>Cuenta</ion-label>
+      </ion-tab-button>
+  
+  
+    </ion-tab-bar>
+  
+  </ion-tabs>
+
+  
+  </ion-content>
