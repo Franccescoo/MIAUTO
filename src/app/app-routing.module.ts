@@ -39,6 +39,14 @@ const routes: Routes = [
     path: 'perfil-conductor',
     loadChildren: () => import('./pages/perfil-conductor/perfil-conductor.module').then( m => m.PerfilConductorPageModule)
   },
+  {
+    path: 'modificar-cliente',
+    loadChildren: () => import('./pages/modificar-cliente/modificar-cliente.module').then( m => m.ModificarClientePageModule)
+  },
+  {
+    path: 'modificar-conductor',
+    loadChildren: () => import('./pages/modificar-conductor/modificar-conductor.module').then( m => m.ModificarConductorPageModule)
+  },
 ];
 
 @NgModule({
