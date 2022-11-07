@@ -24,7 +24,7 @@
     "@angular/router": "^14.0.0",
     "@awesome-cordova-plugins/camera": "^6.1.0",
     "@awesome-cordova-plugins/core": "^6.1.0",
-    "@awesome-cordova-plugins/http": "^6.1.0",
+    "@awesome-cordova-plugins/http": "^6.2.0",
     "@awesome-cordova-plugins/sqlite": "^6.1.0",
     "@capacitor/app": "4.1.0",
     "@capacitor/core": "4.4.0",
