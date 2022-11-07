@@ -1,9 +1,79 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>ConductorCrearViaje</ion-title>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="perfil-cliente"></ion-back-button>
+    </ion-buttons>
+  <ion-title >Crear Viaje </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+
+
+
+<ion-card-content>
+  
+  <!-- <ion-grid style="padding-top: 10px; padding-left: unset; padding-right: unset;">
+
+    <ion-row style="border-bottom: black 1px solid; background-color: #e2e2e2;">
+      <ion-col size="10"><ion-input type="text" style="font-size: 15px;" placeholder="Nombre"></ion-input></ion-col>
+      <ion-col size="2"><ion-icon style="padding-top: 10px;" name="chevron-forward-outline"></ion-icon></ion-col>
+    </ion-row>
+
+    <ion-row style="border-bottom: black 1px solid; background-color: #e2e2e2;">
+      <ion-col size="10"><ion-input type="text" style="font-size: 15px;" placeholder="Apellido"></ion-input></ion-col>
+      <ion-col size="2"><ion-icon style="padding-top: 10px;" name="chevron-forward-outline"></ion-icon></ion-col>
+    </ion-row> -->
+    
+  
+    
+    
+    <ion-item>
+      <ion-label>Desde</ion-label>
+      <ion-select placeholder="MALL PLAZA NORTE">
+        <ion-select-option value="">DUOC PLAZA NORTE</ion-select-option>
+
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Hacia</ion-label>
+      <ion-select placeholder="Quilicura">
+        <ion-select-option value="">Quilicura</ion-select-option>
+        <ion-select-option value="nes">Recoleta</ion-select-option>
+        <ion-select-option value="n64">Lampa</ion-select-option>
+        <ion-select-option value="ps">Hechuraba</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Asientos</ion-label>
+      <ion-input placeholder="4"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Autos</ion-label>
+      <ion-select placeholder="Selecciona auto">
+        <ion-select-option value="">Auto 1</ion-select-option>
+        <ion-select-option value="nes">Auto 2</ion-select-option>
+      </ion-select>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="stacked">Costo</ion-label>
+      <ion-input placeholder="$10.000"></ion-input>
+    </ion-item>
+
+
+    
+  <!-- </ion-grid> -->
+
+  <center>
+    <ion-button shape="round" [routerLink]="['/inicio-conductor']">CONFIRMAR</ion-button>
+  </center>
+
+</ion-card-content>
+
 
 </ion-content>
