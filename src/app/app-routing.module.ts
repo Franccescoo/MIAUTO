@@ -47,6 +47,30 @@ const routes: Routes = [
     path: 'modificar-conductor',
     loadChildren: () => import('./pages/modificar-conductor/modificar-conductor.module').then( m => m.ModificarConductorPageModule)
   },
+  {
+    path: 'cliente-ver-viaje',
+    loadChildren: () => import('./pages/cliente-ver-viaje/cliente-ver-viaje.module').then( m => m.ClienteVerViajePageModule)
+  },
+  {
+    path: 'cliente-viaje-tomado',
+    loadChildren: () => import('./pages/cliente-viaje-tomado/cliente-viaje-tomado.module').then( m => m.ClienteViajeTomadoPageModule)
+  },
+  {
+    path: 'conductor-crear-viaje',
+    loadChildren: () => import('./pages/conductor-crear-viaje/conductor-crear-viaje.module').then( m => m.ConductorCrearViajePageModule)
+  },
+  {
+    path: 'conductor-modificar-viaje',
+    loadChildren: () => import('./pages/conductor-modificar-viaje/conductor-modificar-viaje.module').then( m => m.ConductorModificarViajePageModule)
+  },
+  {
+    path: 'conductor-eliminar-viaje',
+    loadChildren: () => import('./pages/conductor-eliminar-viaje/conductor-eliminar-viaje.module').then( m => m.ConductorEliminarViajePageModule)
+  },
+  {
+    path: 'conductor-ver-comentario',
+    loadChildren: () => import('./pages/conductor-ver-comentario/conductor-ver-comentario.module').then( m => m.ConductorVerComentarioPageModule)
+  },
 ];
 
 @NgModule({
