@@ -1,8 +1,31 @@
-<ion-header>
-  <ion-toolbar color="success">
-    <ion-title>Perfil</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="success">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+
+    <ion-button [routerLink]="['/inicio-cliente']" style="margin-top: 5px;"color="success"expand="full">INICIO</ion-button>
+
+    <ion-button [routerLink]="['/mapa-cliente']" style="margin-top: 15px;"color="success"expand="full">MAPA</ion-button>
+    
+    <ion-button [routerLink]="['/perfil-cliente']" style="margin-top: 15px;"color="success"expand="full">PERFIL</ion-button>
+    
+    <ion-button [routerLink]="['/login']" style="margin-top: 300px;"color="danger"expand="full">CERRAR SESIÓN</ion-button>
+
+  </ion-content>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar color="success">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title style="color: black;">Inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
 <ion-content>
   <ion-list-header style="background-color: #e2e2e2; font-size: 15px;">
@@ -32,28 +55,5 @@
   </ion-button>
 
 
-  <ion-router-outlet></ion-router-outlet>
-  <ion-tabs>
-
-    <ion-tab-bar slot="bottom" color="dark" >
-      <ion-tab-button [routerLink]="['/inicio-cliente']" >
-        <ion-icon name="home"></ion-icon>
-        <ion-label >Inicio</ion-label>
-      </ion-tab-button>
-  
-      <ion-tab-button [routerLink]="['/mapa-cliente']">
-        <ion-icon name="map"></ion-icon>
-        <ion-label>Mapa</ion-label>
-      </ion-tab-button>
-  
-      <ion-tab-button [routerLink]="['/perfil-cliente']" >
-        <ion-icon name="person-circle"></ion-icon>
-        <ion-label>Cuenta</ion-label>
-      </ion-tab-button>
-  
-  
-    </ion-tab-bar>
-  
-  </ion-tabs>
 
 </ion-content>
