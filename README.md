@@ -8,6 +8,9 @@ medio ambiente corriendo
 Instalar node modules:
 
     -npm install
+    -npm install -g @angular/cli
+    -ng add @angular/material
+
     
 Para ejecuar Android Studio y ver la aplicación en el celular:
 
